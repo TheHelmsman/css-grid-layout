@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics: Grid Container & Grid Gap</title>
+    <style>
+      .container {
+        /* values:
+        grid            – generates a block-level grid
+        inline-grid     – generates an inline-level grid
+        */
+        display: grid;
+
+        /* values:
+        grid-template-columns
+        grid-template-rows 
+        */
+        grid-template-columns: 70% 30%; /* two columns in percents */
+        /* grid-template-columns: 40% 30% 30%;  /* three columns in percents */
+
+        /* Space between colums, rows or both */
+        /* grid-column-gap: 1em;
+        grid-row-gap: 1em; */
+        grid-gap: 1em;
+      }
+
+      .container > div {
+        background-color: #eee;
+        padding: 1em;
+      }
+      .container > div:nth-child(odd) {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda,
+        ducimus sed. Corrupti ratione praesentium, totam voluptatem unde, neque
+        assumenda nemo magnam quam quos nobis. Minus voluptas facere eaque
+        cumque odio sit expedita veritatis deserunt quibusdam natus doloremque
+        eligendi laborum quaerat error, molestias magni cum velit tempora porro
+        consequatur! Ea sint exercitationem perferendis mollitia accusantium
+        reiciendis minus, molestiae ratione veniam vel unde a sapiente repellat
+        in dicta praesentium voluptatum! Minima tempore nostrum iure ea nesciunt
+        reiciendis quisquam aut officiis asperiores doloremque!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor
+        consectetur. Excepturi, in similique iure laborum voluptatem explicabo
+        nesciunt itaque blanditiis? Eligendi obcaecati dolor alias cumque?
+        Excepturi tenetur suscipit cum!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda,
+        ducimus sed. Corrupti ratione praesentium, totam voluptatem unde, neque
+        assumenda nemo magnam quam quos nobis. Minus voluptas facere eaque
+        cumque odio sit expedita veritatis deserunt quibusdam natus doloremque
+        eligendi laborum quaerat error, molestias magni cum velit tempora porro
+        consequatur! Ea sint exercitationem perferendis mollitia accusantium
+        reiciendis minus, molestiae ratione veniam vel unde a sapiente repellat
+        in dicta praesentium voluptatum! Minima tempore nostrum iure ea nesciunt
+        reiciendis quisquam aut officiis asperiores doloremque!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor
+        consectetur. Excepturi, in similique iure laborum voluptatem explicabo
+        nesciunt itaque blanditiis? Eligendi obcaecati dolor alias cumque?
+        Excepturi tenetur suscipit cum!
+      </div>
+      <div class="item">Hello</div>
+    </div>
+  </body>
+</html>
